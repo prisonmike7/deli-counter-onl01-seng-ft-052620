@@ -22,7 +22,7 @@ def now_serving(line_queue)
   if line_queue.size == 0
     puts "There is nobody waiting to be served!"
   else
-    next_name = line_queue[-1]
+    next_name = line_queue.shift
     puts "Currently serving #{next_name}."
   end
 end
