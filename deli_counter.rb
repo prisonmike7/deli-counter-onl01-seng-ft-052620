@@ -5,11 +5,11 @@ def line(line_queue)
     puts "The line is currently empty."
     return
   else
-    print "The line is currently: "
+    result_str = "The line is currently: "
       line_queue.each_with_index do |name, index|
-        print " #{index + 1}. #{name}"
+        result_str << " #{index + 1}. #{name}"
       end
-    print "\n"
+    puts result_str
   end
 end
 
